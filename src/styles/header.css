@@ -39,11 +39,11 @@ header.shrink {
 }
 
 header.shrink #navbar i {
-    color: #552774;
+    color: #d4af37;
 }
 
 #navbar i:hover {
-    color: #8e52ab;
+    color: #d4af37;
     transform: scale(1.1);
 }
 
@@ -74,7 +74,7 @@ header.shrink #nav_logo {
 }
 
 header.shrink .nav_item a {
-    color: #552774;
+    color: #d4af37;
 }
 
 
@@ -91,13 +91,13 @@ header.shrink .nav_item a {
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: #8e52ab; /* Cor da barrinha */
+    background-color: #d4af37; /* Cor da barrinha */
     border-radius: 4px;
   }
   
 
 .btn_default {
-    background-color: #8e52ab;
+    background-color: #d4af37;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -107,7 +107,7 @@ header.shrink .nav_item a {
 }
 
 header.shrink .btn_default {
-    background-color: #552774;
+    background-color: #d4af37;
 }
 
 .logo_header {
@@ -129,7 +129,7 @@ header.shrink .btn_default {
 /* Quando encolher (rolagem) - já está configurado */
 header.shrink .nav_item a,
 header.shrink #navbar i {
-    color: #552774;
+    color: #d4af37;
 }
 
 /* Esconde o botão X em telas maiores */
@@ -167,7 +167,7 @@ header.shrink #navbar i {
   .menu-icon {
     display: block;
     font-size: 24px;
-    color: #552774;
+    color: #d4af37;
     cursor: pointer;
     margin-left: 12px;
   }
@@ -177,13 +177,13 @@ header.shrink #navbar i {
     top: 20px;
     right: 20px;
     font-size: 22px;
-    color: #552774;
+    color: #d4af37;
     cursor: pointer;
   }
 
   #navbar i,
   .nav_item a {
-    color: #552774;
+    color: #d4af37;
   }
 
   .btn_default {

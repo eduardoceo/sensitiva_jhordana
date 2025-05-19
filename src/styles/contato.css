@@ -1,6 +1,6 @@
 .footer {
-  background-color: #2f1e4c;
-  color: #e1dbee;
+  background-color: #d4af37;
+  color: #ffffff;
   text-align: center;
   padding: 20px 12px;
   border-top-left-radius: 50px;
@@ -23,12 +23,12 @@
 .frase-contato {
   font-size: 0.9rem;
   margin: 4px 0;
-  color: #dcd1f0;
+  color: #fff9e5;
 }
 
 .btn-whatsapp {
   display: inline-block;
-  background-color: #d4af37;
+  background-color: #25D366; /* verde WhatsApp */
   color: #fff;
   padding: 8px 18px;
   border-radius: 30px;
@@ -36,14 +36,19 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 0.85rem;
-  transition: background 0.3s ease;
-  border: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid #1DA851; /* verde mais escuro para borda */
   cursor: pointer;
+ 
 }
 
 .btn-whatsapp:hover {
-  background-color: #b8962f;
+  background-color: #1DA851; /* verde escuro no hover */
+
+  border-color: #137a40;
 }
+
+
 
 .contato-infos {
   margin-top: 10px;
@@ -72,17 +77,17 @@
 
 .info-item i {
   font-size: 0.95rem;
-  color: #d1b3ff;
+  color: #d4af37;
 }
 
 .footer-bottom {
   margin-top: 18px;
   font-size: 0.75rem;
-  color: #cbbbe0;
+  color: #fff1cc;
 }
 
 .footer-bottom a {
-  color: #d1b3ff;
+  color: #fff3cc;
   text-decoration: none;
 }
 

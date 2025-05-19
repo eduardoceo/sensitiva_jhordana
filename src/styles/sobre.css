@@ -1,15 +1,15 @@
 #sobre {
-  background-color: #f5f0fc;
-  color: #2e084b;
+  background-color: #fff9e5; /* tom mais claro que combine com dourado */
+  color: #d4af37;
   padding: 60px 20px;
 }
 
 .sobre-container {
   display: flex;
   align-items: center;
-  max-width: 1200px; /* A largura máxima foi mantida */
+  max-width: 1200px;
   margin: 0 auto;
-  gap: 60px; /* O espaço entre texto e imagem */
+  gap: 60px;
   flex-wrap: wrap;
 }
 
@@ -26,7 +26,7 @@
 
 .sobre-texto {
   flex: 2 1 500px;
-  max-width: 600px; /* A largura do texto foi limitada */
+  max-width: 600px;
 }
 
 .sobre-texto h2 {
@@ -38,47 +38,48 @@
   font-size: 1.05rem;
   line-height: 1.7;
   margin-bottom: 15px;
+  color: black;
 }
 
 /* Responsividade para telas pequenas */
 @media (max-width: 768px) {
   .sobre-container {
-    flex-direction: column; /* Organiza a imagem e o texto em uma coluna */
-    gap: 40px; /* Reduz o espaço entre os elementos */
+    flex-direction: column;
+    gap: 40px;
   }
 
   .sobre-imagem img {
-    max-width: 80%; /* A imagem vai ocupar toda a largura disponível */
+    max-width: 80%;
   }
 
   .sobre-texto {
-    flex: 1 1 100%; /* O texto ocupa toda a largura */
+    flex: 1 1 100%;
   }
 
   .sobre-texto h2 {
-    font-size: 1.5rem; /* Ajusta o tamanho do título */
+    font-size: 1.5rem;
   }
 
   .sobre-texto p {
-    font-size: 1rem; /* Ajusta o tamanho do texto */
+    font-size: 1rem;
   }
 }
 
 /* Responsividade para telas menores (celulares) */
 @media (max-width: 480px) {
   #sobre {
-    padding: 40px 10px; /* Reduz o padding em telas menores */
+    padding: 40px 10px;
   }
 
   .sobre-container {
-    gap: 20px; /* Menor espaço entre imagem e texto */
+    gap: 20px;
   }
 
   .sobre-texto h2 {
-    font-size: 1.3rem; /* Ajusta o título para telas pequenas */
+    font-size: 1.3rem;
   }
 
   .sobre-texto p {
-    font-size: 0.95rem; /* Ajusta o texto */
+    font-size: 0.95rem;
   }
 }
