@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="src/styles/styles.css">
+  <link rel="stylesheet" href="src/styles/header.css">
+  <link rel="stylesheet" href="src/styles/inicio.css">
+  <link rel="stylesheet" href="src/styles/avaliacoes.css">
+  <link rel="stylesheet" href="src/styles/servicos.css">
+  <link rel="stylesheet" href="src/styles/sobre.css">
+  <link rel="stylesheet" href="src/styles/contato.css">
+  <title>Sensitiva Lunara</title>
+</head>
+
+<body>
+
+
+<header>
+  <nav id="navbar">
+    <i class="fa-regular fa-moon"> Sensitiva Lunara</i>
+
+    <ul id="nav_list">
+      <!-- Botão X dentro do menu lateral -->
+      <i class="close-icon fas fa-times"></i>
+
+      <li class="nav_item active"><a href="#inicio">Início</a></li>
+      <li class="nav_item"><a href="#servicos">Serviços</a></li>
+      <li class="nav_item"><a href="#avaliacoes">Avaliações</a></li>
+      <li class="nav_item"><a href="#sobre">Sobre</a></li>
+    </ul>
+
+    <a href="https://wa.link/mggtll">
+      <button class="btn_default">Contato</button>
+    </a>
+
+    <!-- Ícone do menu -->
+    <i class="menu-icon fas fa-bars"></i>
+  </nav>
+</header>
+
+
+
+
+  
+  <main id="content">
+  
+    <section id="inicio" class="hero-section">
+      <div class="content">
+        <h1>Desperte Sua Energia e Transforme Sua Vida</h1>
+        <p>Sentir-se renovado e em harmonia está ao seu alcance. Agende sua consulta e viva uma experiência de transformação única.</p>
+         <a href="https://wa.link/mggtll"><button>Agende Sua Sessão</button></a>
+      </div>
+    </section>
+  
+   <section id="servicos">
+  <div class="servicos-container">
+    <h2 class="title">Alguns De Nossos Serviços Espirituais</h2>
+    <div class="carrossel-wrapper">
+      <div class="carrossel-servicos" id="carrosselServicos">
+        <div class="servico-card">
+          <img src="imagens/servico1.jpg" alt="Simpatias">
+          <h3>Simpatias</h3>
+          <p>Realizamos simpatias para atrair amor, prosperidade e sucesso.</p>
+        </div>
+        <div class="servico-card">
+          <img src="imagens/servico2.jpg" alt="Limpeza Espiritual">
+          <h3>Limpeza Espiritual</h3>
+          <p>Purificação de ambientes e energias pessoais para equilíbrio emocional.</p>
+        </div>
+
+        <div class="servico-card">
+          <img src="imagens/servico3.jpg" alt="Bloqueios Energéticos">
+          <h3>Bloqueios Energéticos</h3>
+          <p>Eliminamos influências negativas e abrimos espaço para novas oportunidades.</p>
+        </div>
+        <div class="servico-card">
+          <img src="imagens/servico4.jpg" alt="Amarração Amorosa">
+          <h3>Amarração Amorosa</h3>
+          <p>Fortalecemos laços afetivos e promovemos harmonia no relacionamento.</p>
+        </div>
+        <div class="servico-card">
+          <img src="imagens/servico5.jpg" alt="Mapa Astral">
+          <h3>Mapa Astral</h3>
+          <p>Interpretamos seu mapa astral para guiar seus propósitos de vida.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="botoes-carrossel">
+      <button class="botao" onclick="moverCarrossel(-1)">&#10094; </button>
+      <button class="botao" onclick="moverCarrossel(1)"> &#10095;</button>
+    </div>
+  </div>
+</section>
+  
+    <section id="avaliacoes">
+      <div class="container">
+        <h2 class="title">Nossos Feedbacks</h2>
+        <p class="subtitle">Depoimentos reais de quem já experimentou nossos serviços espirituais.</p>
+  
+        <div class="testimonials">
+          <!-- Avaliação 1 -->
+          <div class="testimonial-card">
+            <div class="user-info">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente">
+              <div>
+                <h4>Ana Souza</h4>
+              </div>
+            </div>
+            <p>“Senti uma mudança profunda na minha vida. Gratidão por todo o cuidado e atenção.”</p>
+            <div class="stars">★★★★★</div>
+          </div>
+  
+          <!-- Avaliação 2 -->
+          <div class="testimonial-card">
+            <div class="user-info">
+              <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Cliente">
+              <div>
+                <h4>João Henrique</h4>
+              </div>
+            </div>
+            <p>“O atendimento foi acolhedor e os resultados superaram todas as minhas expectativas.”</p>
+            <div class="stars">★★★★★</div>
+          </div>
+  
+          <!-- Avaliação 3 -->
+          <div class="testimonial-card">
+            <div class="user-info">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente">
+              <div>
+                <h4>Márcia Ribeiro</h4>
+              </div>
+            </div>
+            <p>“Uma experiência única! Me senti renovada e cheia de esperança após o atendimento.”</p>
+            <div class="stars">★★★★★</div>
+          </div>
+  
+          <!-- Avaliação 4 -->
+          <div class="testimonial-card">
+            <div class="user-info">
+              <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Cliente">
+              <div>
+                <h4>Pedro Lima</h4>
+              </div>
+            </div>
+            <p>“Atendimento de coração, com muita verdade e sensibilidade. Recomendo a todos.”</p>
+            <div class="stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <div class="atendimento-wrapper">
+      <div class="atendimento-box">
+        <i class="fas fa-building"></i>
+        <h3>ATENDIMENTO <br> PRESENCIAL</h3>
+        <p>Com agendamento</p>
+      </div>
+      <div class="atendimento-box">
+        <i class="fas fa-mobile-alt"></i>
+        <h3>ATENDIMENTO <br> ONLINE</h3>
+        <p>Com agendamento</p>
+      </div>
+    </div>
+  
+    <section id="sobre">
+      <div class="sobre-container">
+        <div class="sobre-imagem">
+          <img src="imagens/sobre.png" alt="Foto de Sensitiva Lunara">
+        </div>
+        <div class="sobre-texto">
+          <h2 class="title">Sobre Lunara</h2>
+          <p>Sou Lunara, Astróloga da Energia. Minha missão é acolher, orientar e transformar vidas por meio da espiritualidade e das práticas holísticas. Com uma jornada construída ao longo dos anos no trabalho com cartas, búzios e tarot, ofereço atendimentos profundos e personalizados, sempre guiados pelo respeito e pela sensibilidade às necessidades emocionais e espirituais de cada pessoa.</p>
+          <p>Também realizo trabalhos espirituais específicos, voltados para desbloqueios energéticos, reconciliações, proteção espiritual e cura interior — sempre com a força dos Orixás e a sabedoria da espiritualidade universal. Cada consulta é uma jornada única, feita com ética, empatia e compromisso. Acredito que o autoconhecimento e o equilíbrio energético são fundamentais para uma vida plena. Por isso, me dedico com carinho a cada pessoa que me procura, oferecendo orientação sincera e espiritualidade aplicada com propósito.</p>
+        </div>
+      </div>
+    </section>
+  
+    <footer class="footer">
+      <div class="footer-container">
+        <h2 class="section_title">Agende sua consulta abaixo</h2>
+        <p class="frase-contato">Está pronta para descobrir o seu caminho espiritual?</p>
+        <p class="frase-contato">Agende sua consulta com carinho e total discrição.</p>
+  
+        <a href="https://wa.link/mggtll" class="btn-whatsapp" target="_blank">
+          <i class="fab fa-whatsapp"></i> Agendar Consulta no WhatsApp
+        </a>
+  
+        <div class="contato-infos">
+          <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>(55) 47 9141-4884</span>
+          </div>
+          <div class="info-item">
+            <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/espiritualista_lunara/" target="_blank">@espiritualista_lunara</a>
+          </div>
+        </div>
+  
+        <div class="footer-bottom">
+          <p>&copy; 2025 <strong>Sensitiva Lunara</strong>. Toda luz e proteção reservadas.</p>
+          <p class="creditos">Desenvolvido por <a href="#" target="_blank">Axion Web | Lumen Digital</a></p>
+        </div>
+      </div>
+    </footer>
+  
+  </main>
+  
+
+
+  <script>
+
+
+// Função para verificar o rolar da página
+window.onscroll = function() {
+    shrinkHeaderOnScroll();
+};
+
+function shrinkHeaderOnScroll() {
+    const header = document.querySelector('header'); // Seleciona o header
+    if (window.pageYOffset > 0) { // Verifica se rolou para baixo
+        header.classList.add('shrink'); // Adiciona a classe shrink
+    } else {
+        header.classList.remove('shrink'); // Remove a classe shrink se estiver no topo
+    }
+}
+
+
+
+
+
+  const carrossel = document.getElementById("carrosselServicos");
+  const cards = document.querySelectorAll(".servico-card");
+
+  let currentIndex = 0;
+
+  function moverCarrossel(direcao) {
+    const cardWidth = cards[0].offsetWidth + 20; // largura + margem
+    const totalCards = cards.length;
+    const maxIndex = totalCards - Math.floor(carrossel.offsetWidth / cardWidth);
+
+    currentIndex += direcao;
+
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+    carrossel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+  }
+
+  window.addEventListener("resize", () => {
+    moverCarrossel(0); // Reajusta ao redimensionar
+  });
+
+// Alterna a visibilidade do menu
+document.querySelector('.menu-icon').addEventListener('click', function() {
+    document.querySelector('#nav_list').classList.toggle('show');
+});
+
+
+  const sections = document.querySelectorAll("section[id]");
+  const navItems = document.querySelectorAll(".nav_item");
+
+  function changeActiveLink() {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100; // margem superior
+      const sectionHeight = section.offsetHeight;
+
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navItems.forEach(li => {
+      li.classList.remove("active");
+      const a = li.querySelector("a");
+      if (a.getAttribute("href") === "#" + current) {
+        li.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", changeActiveLink);
+
+
+
+function toggleMenu() {
+  document.getElementById("nav_list").classList.toggle("show");
+}
+
+
+ document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.querySelector(".menu-icon");
+    const closeIcon = document.querySelector(".close-icon");
+    const navList = document.getElementById("nav_list");
+
+    if (menuIcon && closeIcon && navList) {
+      menuIcon.addEventListener("click", () => {
+        navList.classList.add("show");
+      });
+
+      closeIcon.addEventListener("click", () => {
+        navList.classList.remove("show");
+      });
+    }
+  });
+
+
+  </script>
+
+</body>
+
+</html>

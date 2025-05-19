@@ -1,0 +1,84 @@
+#sobre {
+  background-color: #f5f0fc;
+  color: #2e084b;
+  padding: 60px 20px;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px; /* A largura máxima foi mantida */
+  margin: 0 auto;
+  gap: 60px; /* O espaço entre texto e imagem */
+  flex-wrap: wrap;
+}
+
+.sobre-imagem {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.sobre-imagem img {
+  max-width: 80vh;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-texto {
+  flex: 2 1 500px;
+  max-width: 600px; /* A largura do texto foi limitada */
+}
+
+.sobre-texto h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.sobre-texto p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .sobre-container {
+    flex-direction: column; /* Organiza a imagem e o texto em uma coluna */
+    gap: 40px; /* Reduz o espaço entre os elementos */
+  }
+
+  .sobre-imagem img {
+    max-width: 80%; /* A imagem vai ocupar toda a largura disponível */
+  }
+
+  .sobre-texto {
+    flex: 1 1 100%; /* O texto ocupa toda a largura */
+  }
+
+  .sobre-texto h2 {
+    font-size: 1.5rem; /* Ajusta o tamanho do título */
+  }
+
+  .sobre-texto p {
+    font-size: 1rem; /* Ajusta o tamanho do texto */
+  }
+}
+
+/* Responsividade para telas menores (celulares) */
+@media (max-width: 480px) {
+  #sobre {
+    padding: 40px 10px; /* Reduz o padding em telas menores */
+  }
+
+  .sobre-container {
+    gap: 20px; /* Menor espaço entre imagem e texto */
+  }
+
+  .sobre-texto h2 {
+    font-size: 1.3rem; /* Ajusta o título para telas pequenas */
+  }
+
+  .sobre-texto p {
+    font-size: 0.95rem; /* Ajusta o texto */
+  }
+}

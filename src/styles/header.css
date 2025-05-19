@@ -1,0 +1,218 @@
+header {
+    width: 100%;
+    padding: 18px 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    
+}
+
+header.shrink {
+    padding: 14px 8%;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#navbar a {
+
+    text-decoration: none;
+        
+
+}
+
+#navbar i {
+    font-size: 20px;
+    color: white;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    margin-right: 8px;
+    
+}
+
+header.shrink #navbar i {
+    color: #552774;
+}
+
+#navbar i:hover {
+    color: #8e52ab;
+    transform: scale(1.1);
+}
+
+#nav_logo {
+    font-size: 24px;
+    transition: font-size 0.3s ease-in-out;
+}
+
+header.shrink #nav_logo {
+    font-size: 20px;
+}
+
+#nav_list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    
+    
+    
+}
+
+.nav_item a {
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+    color: white;
+    
+}
+
+header.shrink .nav_item a {
+    color: #552774;
+}
+
+
+
+
+.nav_item {
+    position: relative;
+  }
+  
+  .nav_item.active::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #8e52ab; /* Cor da barrinha */
+    border-radius: 4px;
+  }
+  
+
+.btn_default {
+    background-color: #8e52ab;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+header.shrink .btn_default {
+    background-color: #552774;
+}
+
+.logo_header {
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Esconde o ícone de menu na versão desktop */
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none !important;
+    }
+}
+
+
+
+
+
+/* Quando encolher (rolagem) - já está configurado */
+header.shrink .nav_item a,
+header.shrink #navbar i {
+    color: #552774;
+}
+
+/* Esconde o botão X em telas maiores */
+@media (min-width: 769px) {
+  .close-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav_list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 55%;
+    background-color: white;
+    padding: 80px 20px 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  #nav_list.show {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 24px;
+    color: #552774;
+    cursor: pointer;
+    margin-left: 12px;
+  }
+
+  .close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 22px;
+    color: #552774;
+    cursor: pointer;
+  }
+
+  #navbar i,
+  .nav_item a {
+    color: #552774;
+  }
+
+  .btn_default {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}
+
+
+
+
+/* Responsividade para smartphones menores (ex: iPhone 11 em modo vertical) */
+@media (max-width: 480px) {
+    #nav_logo {
+        font-size: 18px;
+    }
+
+    .btn_default {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    #navbar i {
+        font-size: 24px;
+        display: block !important; /* Garante visibilidade se necessário */
+    }
+
+    .logo_header {
+        width: 32px;
+        height: 32px;
+    }
+}
